@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="KeyChainAccessDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="txQ-IZ-6LD">
+                                <rect key="frame" x="166" y="130" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z4a-jy-8kg">
+                                <rect key="frame" x="104" y="318" width="32" height="30"/>
+                                <state key="normal" title="ADD"/>
+                                <connections>
+                                    <action selector="addItemTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="p6N-Bh-Hf6"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pSN-ec-jK0">
+                                <rect key="frame" x="172" y="318" width="30" height="30"/>
+                                <state key="normal" title="GET"/>
+                                <connections>
+                                    <action selector="getItemTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5xN-UX-4zg"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6dj-gq-axt">
+                                <rect key="frame" x="238" y="318" width="61" height="30"/>
+                                <state key="normal" title="REMOVE"/>
+                                <connections>
+                                    <action selector="removeItemTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3gN-rm-vPm"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="pSN-ec-jK0" firstAttribute="leading" secondItem="Z4a-jy-8kg" secondAttribute="trailing" constant="36" id="3AS-pS-rBa"/>
+                            <constraint firstItem="pSN-ec-jK0" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="BdO-PL-nDn"/>
+                            <constraint firstItem="txQ-IZ-6LD" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ENg-1I-dFF"/>
+                            <constraint firstItem="txQ-IZ-6LD" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="110" id="MHN-DL-me2"/>
+                            <constraint firstItem="6dj-gq-axt" firstAttribute="leading" secondItem="pSN-ec-jK0" secondAttribute="trailing" constant="36" id="dTF-uS-eBS"/>
+                            <constraint firstItem="6dj-gq-axt" firstAttribute="centerY" secondItem="pSN-ec-jK0" secondAttribute="centerY" id="hLI-tG-1QO"/>
+                            <constraint firstItem="pSN-ec-jK0" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="uB0-u4-wz5"/>
+                            <constraint firstItem="Z4a-jy-8kg" firstAttribute="centerY" secondItem="pSN-ec-jK0" secondAttribute="centerY" id="uji-Qb-o9x"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="label" destination="txQ-IZ-6LD" id="A9Q-uU-2pa"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
